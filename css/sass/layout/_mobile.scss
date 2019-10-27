@@ -1,0 +1,180 @@
+.mobile-cont {
+    @media (max-width:1199px) {
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($green, 0.95);
+        z-index: 99;
+        flex-direction: column;
+
+        transition: all 500ms ease-in-out;
+        clip-path: circle(30px at 38px 44px);
+        -webkit-clip-path: circle(30px at 38px 44px);
+        -moz-clip-path: circle(30px at 38px 44px);
+        -o-clip-path: circle(30px at 38px 44px);
+        z-index: 999;
+        visibility: hidden;
+
+        .nav-list {
+            flex-direction: column;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 95px;
+            padding: 0 0;
+        }
+
+        .nav-li {
+            margin: 10px 0;
+        }
+
+        .nav-link {
+            font-size: 20px;
+            font-family: "itc-md";
+            color: #fff;
+            background-image: none;
+            background-image: none;
+            -webkit-text-fill-color: #fff;
+        }
+
+        .join {
+            margin: 0 auto;
+            margin-top: 37px;
+            width: 150px;
+        }
+    }
+}
+
+.nav-tgl {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 100;
+    left: 15px;
+    top: 44px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    background: #fff;
+    line-height: 0.6;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 9999;
+
+    @media (max-width:992px) {
+        display: inline-block;
+    }
+}
+
+.nav-tgl>span {
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    border-radius: 1px;
+    background: $blue;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.nav-tgl>span:before,
+.nav-tgl>span:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    border-radius: 1px;
+    background: $blue;
+    transition: all 200ms;
+}
+
+.nav-tgl>span:before {
+    top: -8px;
+    left: 0;
+    width: 28px;
+}
+
+.nav-tgl>span:after {
+    top: 8px;
+    left: 0;
+    width: 28px;
+}
+
+.nav-tgl:focus {
+    outline: none;
+}
+
+.nav-tgl:hover>span:after,
+.nav-tgl:hover>span:before {
+    width: 28px;
+    left: 0;
+}
+
+.nav-sec.active {
+    .nav-tgl {
+        background-color: transparent;
+    }
+}
+
+
+
+
+.nav-sec.active .mobile-cont {
+    visibility: visible;
+    clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+    -moz-clip-path: circle(100%);
+    -o-clip-path: circle(100%);
+}
+
+.nav-sec.active .nav-tgl>span {
+    height: 0;
+}
+
+.nav-sec.active .nav-tgl>span:after,
+.nav-sec.active .nav-tgl>span:before {
+    top: 0px;
+    left: 2px;
+    width: 25px;
+    background: #fff;
+}
+
+.nav-sec.active .nav-tgl>span:after {
+    transform: rotate(-45deg);
+    top: -2px;
+}
+
+.nav-sec.active .nav-tgl>span:before {
+    transform: rotate(45deg);
+    top: -2px;
+}
+
+.box {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clip-fix {
+    @media (max-width: 992px) {
+        clip-path: circle(30px at 37px 34px);
+        -webkit-clip-path: circle(30px at 37px 34px);
+        -moz-clip-path: circle(30px at 37px 34px);
+        -o-clip-path: circle(30px at 37px 34px);
+    }
+}
+
+.nav-sec.active {
+    visibility: visible;
+    clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+    -moz-clip-path: circle(100%);
+    -o-clip-path: circle(100%);
+}

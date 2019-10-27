@@ -44,4 +44,28 @@ $(document).ready(function () {
         $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-duration');
         $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-delay');
     }
+
+
+
+
+
+    const menu = document.querySelector('.nav-sec');
+    const btn = menu.querySelector('.nav-tgl');
+    btn.addEventListener('click', evt => {
+        if (menu.className.indexOf('active') === -1) {
+            menu.classList.add('active');
+        } else {
+            menu.classList.remove('active');
+        }
+    })
+
+    if ($(window).width() < 992) {
+        $('.nav-link,.nav').click(function () {
+            $('.nav-sec').removeClass("active")
+            $('body').toggleClass("overfollow-fix")
+        });
+    }
+    $('.nav-tgl').click(function () {
+        $('body').toggleClass("overfollow-fix")
+    });
 });
