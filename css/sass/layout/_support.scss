@@ -2,10 +2,19 @@
     margin-top: 172px;
     position: relative;
 
+    @media (max-width:1199px) {
+        margin-top: 80px;
+    }
+
     .pattern {
         position: absolute;
         left: 0;
         top: -107px;
+
+        @media (max-width:1199px) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     .support-header {
@@ -35,6 +44,12 @@
             transform: translateX(-10px);
             color: #fff;
             background-color: $blue;
+        }
+
+        @media (max-width:1199px) {
+            padding: 10px 25px;
+            text-align: center;
+            justify-content: center;
         }
     }
 }

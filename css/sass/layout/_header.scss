@@ -19,6 +19,16 @@
 .header-sec {
     margin-top: 100px;
 
+    @media (max-width:1199px) {
+        margin-top: 50px;
+    }
+
+    &:last-of-type {
+        @media (max-width:1199px) {
+            margin-top: 25px;
+        }
+    }
+
     .main-title {
         font-family: 'itc-bd';
         font-size: 36px;
@@ -31,9 +41,10 @@
         }
 
         @media (max-width:1199px) {
-            font-size: 26px;
-            text-align: right;
+            font-size: 24px;
+            text-align: center;
             margin: auto;
+            margin-bottom: 25px;
         }
     }
 

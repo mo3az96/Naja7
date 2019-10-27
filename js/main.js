@@ -1,16 +1,21 @@
 $(document).ready(function () {
     AOS.init();
+
     $(window).scroll(function () {
 
         if ($(this).scrollTop() > 37) {
             $('.nav-sec').css("padding", "7px 0");
             $('.nav-sec').css("background-color", "#fff");
             $('.nav-sec-cont').css("justify-content", "space-between");
+            $('.nav-sec').addClass("box");
+            $('.nav-tgl').addClass("box");
 
         } else {
             $('.nav-sec').css("padding", "37px 0 0");
             $('.nav-sec').css("background", "transparent");
             $('.nav-sec-cont').css("justify-content", "flex-start");
+            $('.nav-sec').removeClass("box");
+            $('.nav-tgl').removeClass("box");
 
         }
 
@@ -35,8 +40,8 @@ $(document).ready(function () {
 
     }
     if ($(window).width() < 992) {
-        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos');
-        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos-duration');
-        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos-delay');
+        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos');
+        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-duration');
+        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-delay');
     }
 });

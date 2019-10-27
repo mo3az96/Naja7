@@ -1,23 +1,39 @@
 .terms {
     margin-top: 250px;
 
+    @media (max-width:1199px) {
+        margin-top: 80px;
+    }
+
     .terms-header {
         font-size: 30px;
         font-family: "itc-bd";
         color: $grey;
         margin-bottom: 50px;
+
+        @media (max-width:1199px) {
+            margin-bottom: 40px;
+        }
     }
 
     .terms-cont {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @media (max-width:1199px) {
+            flex-direction: column;
+        }
     }
 
     .term {
         display: flex;
         flex-direction: column;
 
+        @media (max-width:1199px) {
+            align-items: center;
+            margin-bottom: 30px;
+        }
     }
 
     .num {
@@ -50,5 +66,12 @@
     .term-text {
         font-size: 20px;
         color: $grey;
+    }
+
+    .join {
+        @media (max-width:1199px) {
+
+            margin-top: 40px;
+        }
     }
 }
