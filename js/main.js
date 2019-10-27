@@ -49,7 +49,7 @@ $(document).ready(function () {
 
 
 
-    const menu = document.querySelector('.nav-sec');
+    const menu = document.querySelector('.nav-sec-cont');
     const btn = menu.querySelector('.nav-tgl');
     btn.addEventListener('click', evt => {
         if (menu.className.indexOf('active') === -1) {
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     if ($(window).width() < 992) {
         $('.nav-link,.nav').click(function () {
-            $('.nav-sec').removeClass("active")
+            $('.nav-sec-cont').removeClass("active")
             $('body').toggleClass("overfollow-fix")
         });
     }

@@ -273,6 +273,11 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .nav-sec .mobile-cont {
+    display: block;
+  }
+}
 .nav-sec .nav-li {
   margin-left: 20px;
 }
@@ -309,22 +314,19 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media (max-width: 1199px) {
   .mobile-cont {
-    display: flex;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    content: "";
     width: 100vw;
     height: 100vh;
     background-color: rgba(55, 172, 86, 0.95);
-    z-index: 99;
-    flex-direction: column;
     transition: all 500ms ease-in-out;
-    clip-path: circle(30px at 38px 44px);
-    -webkit-clip-path: circle(30px at 38px 44px);
-    -moz-clip-path: circle(30px at 38px 44px);
-    -o-clip-path: circle(30px at 38px 44px);
+    clip-path: circle(30px at 37px 44px);
+    -webkit-clip-path: circle(30px at 37px 44px);
+    -moz-clip-path: circle(30px at 37px 44px);
+    -o-clip-path: circle(30px at 37px 44px);
     z-index: 999;
     visibility: hidden;
   }
@@ -423,11 +425,11 @@ input[type=number]::-webkit-inner-spin-button {
   left: 0;
 }
 
-.nav-sec.active .nav-tgl {
+.nav-sec-cont.active .nav-tgl {
   background-color: transparent;
 }
 
-.nav-sec.active .mobile-cont {
+.nav-sec-cont.active .mobile-cont {
   visibility: visible;
   clip-path: circle(100%);
   -webkit-clip-path: circle(100%);
@@ -435,47 +437,30 @@ input[type=number]::-webkit-inner-spin-button {
   -o-clip-path: circle(100%);
 }
 
-.nav-sec.active .nav-tgl > span {
+.nav-sec-cont.active .nav-tgl > span {
   height: 0;
 }
 
-.nav-sec.active .nav-tgl > span:after,
-.nav-sec.active .nav-tgl > span:before {
+.nav-sec-cont.active .nav-tgl > span:after,
+.nav-sec-cont.active .nav-tgl > span:before {
   top: 0px;
   left: 2px;
   width: 25px;
   background: #fff;
 }
 
-.nav-sec.active .nav-tgl > span:after {
+.nav-sec-cont.active .nav-tgl > span:after {
   transform: rotate(-45deg);
   top: -2px;
 }
 
-.nav-sec.active .nav-tgl > span:before {
+.nav-sec-cont.active .nav-tgl > span:before {
   transform: rotate(45deg);
   top: -2px;
 }
 
 .box {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 992px) {
-  .clip-fix {
-    clip-path: circle(30px at 37px 34px);
-    -webkit-clip-path: circle(30px at 37px 34px);
-    -moz-clip-path: circle(30px at 37px 34px);
-    -o-clip-path: circle(30px at 37px 34px);
-  }
-}
-
-.nav-sec.active {
-  visibility: visible;
-  clip-path: circle(100%);
-  -webkit-clip-path: circle(100%);
-  -moz-clip-path: circle(100%);
-  -o-clip-path: circle(100%);
 }
 
 .header {

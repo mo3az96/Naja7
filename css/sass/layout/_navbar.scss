@@ -24,6 +24,10 @@
     .mobile-cont {
         display: flex;
         align-items: center;
+
+        @media (max-width:992px) {
+            display: block;
+        }
     }
 
     .nav-li {
