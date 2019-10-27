@@ -1,0 +1,142 @@
+@keyframes inscreen {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.inscreen {
+    animation: inscreen 0.4s ease forwards;
+}
+
+
+@keyframes outscreen {
+    0% {
+        right: auto;
+        left: 0;
+    }
+
+    100% {
+        right: auto;
+        left: -100%;
+    }
+}
+
+.outscreen {
+    animation: outscreen 0.5s ease forwards;
+}
+
+// @keyframes vibe {
+
+//     0%,
+//     100% {
+//         -webkit-transform: translateY(0);
+//         -ms-transform: translateY(0);
+//         -o-transform: translateY(0);
+//         transform: translateY(0);
+//     }
+
+//     25% {
+//         -webkit-transform: translateY(-6px);
+//         -ms-transform: translateY(-6px);
+//         -o-transform: translateY(-6px);
+//         transform: translateY(-6px);
+//     }
+
+//     50% {
+//         -webkit-transform: translateY(6px);
+//         -ms-transform: translateY(6px);
+//         -o-transform: translateY(6px);
+//         transform: translateY(6px);
+//     }
+
+//     75% {
+//         -webkit-transform: translateY(-6px);
+//         -ms-transform: translateY(-6px);
+//         -o-transform: translateY(-6px);
+//         transform: translateY(-6px);
+//     }
+// }
+@keyframes vibe {
+
+    0%,
+    100% {
+        -webkit-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+        -o-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+
+    25% {
+        -webkit-transform: translate(50%, -6px);
+        -ms-transform: translate(50%, -6px);
+        -o-transform: translate(50%, -6px);
+        transform: translate(50%, -6px);
+    }
+
+    50% {
+        -webkit-transform: translate(50%, 6px);
+        -ms-transform: translate(50%, 6px);
+        -o-transform: translate(50%, 6px);
+        transform: translate(50%, 6px);
+    }
+
+    75% {
+        -webkit-transform: translate(50%, -6px);
+        -ms-transform: translate(50%, -6px);
+        -o-transform: translate(50%, -6px);
+        transform: translate(50%, -6px);
+    }
+}
+
+
+
+.anim-typewriter {
+    animation: typewriter 1.5s steps(50) 1 normal both;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 430px;
+    }
+}
+
+@keyframes shape {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+@keyframes pattern-anim {
+
+    0% {
+        background-position-y: 0;
+    }
+
+    100% {
+        background-position-y: 800px;
+    }
+}
+
+// @keyframes blinkTextCursor {
+//     from {
+//         border-right-color: #0f2460;
+//     }
+
+//     to {
+//         border-right-color: transparent;
+//     }
+// }

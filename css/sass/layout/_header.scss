@@ -1,0 +1,36 @@
+.header {
+    position: relative;
+}
+
+.header-banner {
+    img {
+        position: absolute;
+        top: -380px;
+        right: -120px;
+    }
+}
+
+.header-sec {
+    margin-top: 100px;
+
+    .main-title {
+        font-family: 'itc-bd';
+        font-size: 36px;
+        color: $grey;
+        white-space: nowrap;
+        overflow: hidden;
+
+        span {
+            color: $blue;
+        }
+    }
+
+    .txt {
+        font-size: 20px;
+        font-family: 'itc-li';
+        color: $grey;
+        line-height: 1.8;
+        padding-left: 100px;
+        margin-top: 35px;
+    }
+}

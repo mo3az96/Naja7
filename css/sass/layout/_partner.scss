@@ -1,0 +1,102 @@
+.partner {
+    margin-top: 160px;
+
+    .part-cont {
+        position: relative;
+        padding-top: 140px;
+    }
+
+    .partner-title-cont {
+        position: absolute;
+        left: -15px;
+        top: 0;
+    }
+
+    .partner-header {
+        z-index: 9;
+        position: relative;
+        font-size: 36px;
+        font-family: "itc-bd";
+        color: #fff;
+        line-height: 1.111;
+    }
+
+    .parts {
+        padding-top: 140px;
+        padding-right: 35px;
+    }
+
+    .part {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .part-logo {
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        min-width: 153px;
+        height: 153px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 38px;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        position: relative;
+        @include transition(all 0.3s ease-in-out);
+
+        &:before {
+            pointer-events: none;
+            position: absolute;
+            z-index: -1;
+            content: '';
+            top: 100%;
+            left: 5%;
+            height: 10px;
+            width: 90%;
+            opacity: 0;
+            background: -webkit-radial-gradient(center, ellipse, rgba($grey, .25) 0, rgba(0, 0, 0, 0) 80%);
+            background: radial-gradient(ellipse at center, rgba($grey, .25) 0, rgba(0, 0, 0, 0) 80%);
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:hover {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+
+            &:before {
+                opacity: 1;
+                -webkit-transform: translateY(5px);
+                transform: translateY(5px);
+            }
+        }
+    }
+
+    .part-head {
+        font-size: 24px;
+        font-family: "itc-Md";
+        color: $grey;
+        margin-bottom: 15px;
+    }
+
+    .partname {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: "itc-Md";
+        color: $grey;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    .part-txt {
+        font-size: 18px;
+        font-family: "itc-li";
+        color: $grey;
+        text-align: justify;
+        line-height: 2.001;
+    }
+}

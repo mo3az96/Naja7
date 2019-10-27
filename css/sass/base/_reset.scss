@@ -1,0 +1,52 @@
+body {
+    font-family: itc;
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: 5000px;
+
+    &::-webkit-scrollbar {
+        background-color: #e6e6e6;
+        width: 8px;
+        height: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(#37ac56, 0.75);
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(#37ac56, 0.75) #e6e6e6;
+
+}
+
+.container {
+    max-width: 1170px;
+
+}
+
+.fixall {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+input[type=number] {
+    -moz-appearance: textfield !important;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,58 @@
+.about-sec {
+    margin-top: 180px;
+
+    .about-banner {
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 25px;
+        }
+    }
+
+    .about-txt {
+        margin-top: 170px;
+        margin-right: -15px;
+    }
+
+    .about-header {
+        font-size: 30px;
+        font-family: 'itc-bd';
+        color: $grey;
+    }
+
+    .txt {
+        font-size: 20px;
+        color: $grey;
+        font-family: 'itc-li';
+        line-height: 1.8;
+        text-align: justify;
+        margin-top: 35px;
+    }
+
+    .info {
+        margin-top: 182px;
+        padding: 0 62px;
+
+        .info-title {
+            font-size: 24px;
+            font-family: 'itc-md';
+            color: $blue;
+            margin-top: 44px;
+        }
+
+        .info-txt {
+            font-size: 18px;
+            font-family: 'itc-li';
+            line-height: 2.001;
+            color: $grey;
+            margin-top: 15px;
+        }
+
+        &.info2 {
+            .info-title {
+                color: $green;
+            }
+        }
+    }
+}

@@ -1,0 +1,152 @@
+.stages {
+    margin-top: 70px;
+
+    .stages-header {
+        font-size: 30px;
+        font-family: "itc-Bd";
+        color: $grey;
+        margin-bottom: 23px;
+
+        img {
+            margin-left: 10px;
+        }
+    }
+
+    .stages-cont {
+        position: relative;
+    }
+
+    .stage {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-family: "itc-md";
+        color: $grey;
+        line-height: 1.556;
+        position: absolute;
+        cursor: default;
+
+        span {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: $blue;
+            @include transition(all 0.3s ease-in-out);
+        }
+
+        &:nth-of-type(n+6) {
+            span {
+                background-color: $green;
+            }
+        }
+
+        &:nth-of-type(1) {
+            text-align: left;
+            top: 60px;
+            right: 135px;
+
+            span {
+                margin-right: 20px;
+            }
+        }
+
+        &:nth-of-type(2) {
+            text-align: center;
+            flex-direction: column;
+            top: 93px;
+            right: 370px;
+
+            span {
+                margin-top: 9px;
+            }
+        }
+
+        &:nth-of-type(3) {
+            text-align: center;
+            flex-direction: column-reverse;
+            top: 157px;
+            left: 350px;
+
+            span {
+                margin-bottom: 6px;
+            }
+        }
+
+        &:nth-of-type(4) {
+            text-align: right;
+            flex-direction: row-reverse;
+            top: 225px;
+            left: 160px;
+
+            span {
+                margin-left: 23px;
+            }
+        }
+
+        &:nth-of-type(5) {
+            text-align: center;
+            flex-direction: column-reverse;
+            top: 299px;
+            left: 399px;
+
+            span {
+                margin-bottom: 6px;
+            }
+        }
+
+        &:nth-of-type(6) {
+            text-align: center;
+            flex-direction: column;
+            top: 235px;
+            right: 392px;
+
+            span {
+
+                margin-top: 9px;
+            }
+        }
+
+        &:nth-of-type(7) {
+            text-align: left;
+            bottom: 52px;
+            right: 152px;
+
+            span {
+
+                margin-right: 20px;
+            }
+        }
+
+        &:nth-of-type(8) {
+            text-align: center;
+            flex-direction: column;
+            bottom: -4px;
+            right: 372px;
+
+            span {
+
+                margin-top: 9px;
+            }
+        }
+
+        &:nth-of-type(9) {
+            text-align: center;
+            flex-direction: column-reverse;
+            bottom: -66px;
+            left: 377px;
+
+            span {
+
+                margin-bottom: 6px;
+            }
+        }
+
+        &:hover {
+            span {
+                background-color: $grey;
+            }
+        }
+
+    }
+}
