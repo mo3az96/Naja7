@@ -40,9 +40,7 @@ $(document).ready(function () {
 
     }
     if ($(window).width() < 992) {
-        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos');
-        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-duration');
-        $('div,a,ul,button,p,h1,h2,h3,h4,img').removeAttr('data-aos-delay');
+
     }
 
 
