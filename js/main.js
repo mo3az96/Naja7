@@ -58,7 +58,7 @@ $(document).ready(function () {
     })
 
     if ($(window).width() < 992) {
-        $('.nav-link,.nav').click(function () {
+        $('.nav-link,.mobile-cont').click(function () {
             $('.nav-sec-cont').removeClass("active")
             $('body').toggleClass("overfollow-fix")
         });
