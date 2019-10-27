@@ -4,19 +4,29 @@
     padding-top: 37px;
     position: sticky;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 99999;
     @include transition(all 0.3s ease-in-out);
+
+    @media (max-width:1199px) {
+        position: relative;
+    }
 
 
     .nav-sec-cont {
         display: flex;
         align-items: center;
+        @include transition(all 0.3s ease-in-out);
     }
 
     .mobile-cont {
         display: flex;
         align-items: center;
+
+        @media (max-width:1199px) {
+            display: none;
+        }
+
     }
 
     .nav-li {

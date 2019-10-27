@@ -96,15 +96,31 @@
 
 .anim-typewriter {
     animation: typewriter 1.5s steps(50) 1 normal both;
+    width: 430px;
+
+    @media (max-width:992) {
+        animation: typewriter-xs 1.5s steps(50) 1 normal both;
+        width: 307px;
+    }
 }
 
 @keyframes typewriter {
     from {
-        width: 0;
+        max-width: 0;
     }
 
     to {
-        width: 430px;
+        max-width: 430px;
+    }
+}
+
+@keyframes typewriter-xs {
+    from {
+        max-width: 0;
+    }
+
+    to {
+        max-width: 307px;
     }
 }
 

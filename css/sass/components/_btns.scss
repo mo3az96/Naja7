@@ -9,12 +9,13 @@
     justify-content: center;
     border-radius: 40px;
     margin-right: 9px;
-
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     position: relative;
     overflow: hidden;
     @include transition(all 0.3s ease-in-out);
+
+
 
     &:before {
         content: "";
@@ -47,8 +48,13 @@
     .join {
         width: 162px;
         height: 46px;
-        margin: 0;
+        margin: auto;
         margin-top: 50px;
+
+        @media (max-width:1199px) {
+            margin: auto;
+            margin-top: 50px;
+        }
     }
 }
 

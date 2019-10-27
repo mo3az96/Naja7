@@ -2,7 +2,8 @@ body {
     font-family: itc;
     overflow-x: hidden;
     overflow-y: visible;
-    height: 5000px;
+    font-style: italic;
+
 
     &::-webkit-scrollbar {
         background-color: #e6e6e6;
@@ -18,12 +19,10 @@ body {
 html {
     scrollbar-width: thin;
     scrollbar-color: rgba(#37ac56, 0.75) #e6e6e6;
-
 }
 
 .container {
     max-width: 1170px;
-
 }
 
 .fixall {

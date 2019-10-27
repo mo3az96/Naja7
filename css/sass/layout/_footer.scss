@@ -1,0 +1,56 @@
+.footer {
+    background-image: url("../images/curve.png");
+    background-position-x: center;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    position: relative;
+
+    .pattern {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    .footer-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'itc-md';
+        margin-left: 43px;
+
+        span {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            width: 39px;
+            height: 39px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 16px;
+            color: rgb(35, 172, 205);
+            margin-left: 9px;
+        }
+    }
+
+    .phone {
+        transform: rotate(-90deg);
+    }
+
+    .left {
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+    }
+}

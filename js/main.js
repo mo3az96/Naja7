@@ -5,10 +5,12 @@ $(document).ready(function () {
         if ($(this).scrollTop() > 37) {
             $('.nav-sec').css("padding", "7px 0");
             $('.nav-sec').css("background-color", "#fff");
+            $('.nav-sec-cont').css("justify-content", "space-between");
 
         } else {
             $('.nav-sec').css("padding", "37px 0 0");
             $('.nav-sec').css("background", "transparent");
+            $('.nav-sec-cont').css("justify-content", "flex-start");
 
         }
 
@@ -28,5 +30,13 @@ $(document).ready(function () {
         }, 1000, 'swing');
     });
 
+    if ($(window).width() <= 1199) {
+        $("img").addClass("img-fluid");
 
+    }
+    if ($(window).width() < 992) {
+        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos');
+        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos-duration');
+        $('div,a,ul,button,p,h1,h2,h3,h4').removeAttr('data-aos-delay');
+    }
 });
