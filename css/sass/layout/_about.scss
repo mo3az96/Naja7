@@ -49,6 +49,7 @@
         @media (max-width:1199px) {
             margin-top: 25px;
             padding-right: 15px;
+            transition-delay: 0 !important;
         }
     }
 
@@ -87,6 +88,7 @@
             @media (max-width:1199px) {
                 order: 3;
                 margin-top: 15px;
+                transition-delay: 0 !important;
             }
         }
 
