@@ -1122,7 +1122,7 @@ input[type=number]::-webkit-inner-spin-button {
   .footer {
     background-color: #23accd;
     background-image: none;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-top: 0;
   }
 }
