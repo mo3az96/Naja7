@@ -10,8 +10,8 @@
 
     @media (max-width:1199px) {
         position: relative;
-        padding-top: 15px !important;
-        box-shadow: none;
+        padding: 15px 0 0 !important;
+        box-shadow: none !important;
     }
 
 
@@ -31,7 +31,7 @@
     }
 
     .nav-li {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .nav-list {
@@ -55,6 +55,8 @@
         background-position: 0%;
 
         @include transition(all 0.5s ease-in-out);
+
+        padding-right: 5px;
 
         &:hover {
             @include transition(all 0.5s ease-in-out);

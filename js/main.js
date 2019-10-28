@@ -60,10 +60,10 @@ $(document).ready(function () {
     if ($(window).width() < 992) {
         $('.nav-link,.mobile-cont').click(function () {
             $('.nav-sec-cont').removeClass("active")
-            $('body').toggleClass("overfollow-fix")
+            $('body,html').toggleClass("overfollow-fix")
         });
     }
     $('.nav-tgl').click(function () {
-        $('body').toggleClass("overfollow-fix")
+        $('body,html').toggleClass("overfollow-fix")
     });
 });

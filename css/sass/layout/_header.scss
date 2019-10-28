@@ -35,6 +35,8 @@
         color: $grey;
         white-space: nowrap;
         overflow: hidden;
+        padding-right: 2px;
+        padding-bottom: 2px;
 
         span {
             color: $blue;
@@ -54,7 +56,7 @@
         color: $grey;
         line-height: 1.8;
         padding-left: 100px;
-        margin-top: 35px;
+        margin-top: 33px;
 
         @media (max-width:1199px) {
             padding-left: 0;

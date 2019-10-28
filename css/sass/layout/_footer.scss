@@ -2,14 +2,24 @@
     background-image: url("../images/curve.png");
     background-position-x: center;
     padding-top: 140px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     margin-top: 40px;
     position: relative;
 
+    &:after {
+        background-color: rgb(35, 172, 205);
+        width: 100%;
+        content: "";
+        position: absolute;
+        height: 152px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
     @media (max-width:1199px) {
         padding-top: 50px;
-        background-image: none;
-        background-color: rgb(35, 172, 205);
     }
 
     .pattern {

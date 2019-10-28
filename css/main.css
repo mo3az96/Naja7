@@ -218,7 +218,7 @@ input[type=number]::-webkit-inner-spin-button {
 .header-sec .join {
   width: 162px;
   height: 46px;
-  margin: auto;
+  margin-left: auto;
   margin-top: 50px;
 }
 @media (max-width: 1199px) {
@@ -262,8 +262,8 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 1199px) {
   .nav-sec {
     position: relative;
-    padding-top: 15px !important;
-    box-shadow: none;
+    padding: 15px 0 0 !important;
+    box-shadow: none !important;
   }
 }
 .nav-sec .nav-sec-cont {
@@ -284,7 +284,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 .nav-sec .nav-li {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .nav-sec .nav-list {
   display: flex;
@@ -308,6 +308,7 @@ input[type=number]::-webkit-inner-spin-button {
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  padding-right: 5px;
 }
 .nav-sec .nav-link:hover {
   -moz-transition: all 0.5s ease-in-out;
@@ -326,7 +327,7 @@ input[type=number]::-webkit-inner-spin-button {
     content: "";
     width: 100vw;
     height: 100vh;
-    background-color: rgba(55, 172, 86, 0.95);
+    background-color: #fff;
     transition: all 500ms ease-in-out;
     clip-path: circle(30px at 37px 44px);
     -webkit-clip-path: circle(30px at 37px 44px);
@@ -349,16 +350,28 @@ input[type=number]::-webkit-inner-spin-button {
   .mobile-cont .nav-link {
     font-size: 20px;
     font-family: "itc-md";
-    color: #fff;
+    color: #626262;
     background-image: none;
     background-image: none;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color: #626262;
+    padding: 0;
   }
   .mobile-cont .join {
     margin: 0 auto;
     margin-top: 37px;
     width: 150px;
   }
+}
+.mobile-cont .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.mobile-cont .right .contact {
+  color: #25accd;
+  margin-bottom: 10px;
 }
 
 .nav-tgl {
@@ -391,7 +404,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 2px;
   width: 28px;
   border-radius: 1px;
-  background: #25accd;
+  background: #626262;
   top: 50%;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -404,7 +417,7 @@ input[type=number]::-webkit-inner-spin-button {
   content: "";
   height: 2px;
   border-radius: 1px;
-  background: #25accd;
+  background: #626262;
   transition: all 200ms;
 }
 
@@ -451,7 +464,7 @@ input[type=number]::-webkit-inner-spin-button {
   top: 0px;
   left: 2px;
   width: 25px;
-  background: #fff;
+  background: #626262;
 }
 
 .nav-sec-cont.active .nav-tgl > span:after {
@@ -508,6 +521,8 @@ input[type=number]::-webkit-inner-spin-button {
   color: #626262;
   white-space: nowrap;
   overflow: hidden;
+  padding-right: 2px;
+  padding-bottom: 2px;
 }
 .header-sec .main-title span {
   color: #25accd;
@@ -526,7 +541,7 @@ input[type=number]::-webkit-inner-spin-button {
   color: #626262;
   line-height: 1.8;
   padding-left: 100px;
-  margin-top: 35px;
+  margin-top: 33px;
 }
 @media (max-width: 1199px) {
   .header-sec .txt {
@@ -580,6 +595,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: "itc-li";
   line-height: 1.8;
   text-align: justify;
+  margin-top: 23px;
 }
 @media (max-width: 1199px) {
   .about-sec .txt {
@@ -1059,15 +1075,24 @@ input[type=number]::-webkit-inner-spin-button {
   background-image: url("../images/curve.png");
   background-position-x: center;
   padding-top: 140px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   margin-top: 40px;
   position: relative;
+}
+.footer:after {
+  background-color: #23accd;
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 152px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 @media (max-width: 1199px) {
   .footer {
     padding-top: 50px;
-    background-image: none;
-    background-color: #23accd;
   }
 }
 .footer .pattern {
