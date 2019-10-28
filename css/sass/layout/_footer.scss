@@ -19,11 +19,15 @@
 
         @media (max-width:1199px) {
             height: 100px;
+            display: none;
         }
     }
 
     @media (max-width:1199px) {
+        background-color: rgb(35, 172, 205);
+        background-image: none;
         padding-top: 100px;
+        margin-top: 0;
     }
 
     .pattern {
