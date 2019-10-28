@@ -1,5 +1,12 @@
 $(document).ready(function () {
-    AOS.init();
+
+    if ($(window).width() <= 992) {
+        AOS.init({
+            once: true
+        });
+    } else {
+        AOS.init();
+    }
 
     $(window).scroll(function () {
 

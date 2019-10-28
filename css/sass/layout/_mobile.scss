@@ -56,8 +56,27 @@
         margin-top: 25px;
 
         .contact {
-            color: $blue;
-            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: rgb(35, 172, 205);
+            font-size: 16px;
+
+            span {
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                width: 39px;
+                height: 39px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                font-size: 16px;
+                color: rgb(35, 172, 205);
+                margin-left: 5px;
+            }
+        }
+
+        .phone {
+            transform: rotate(-90deg);
         }
     }
 }
