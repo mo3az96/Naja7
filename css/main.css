@@ -1193,7 +1193,7 @@ input[type=number]::-webkit-inner-spin-button {
 .join-pop {
   position: fixed;
   width: 100%;
-  right: 0;
+  right: -100%;
   top: 0;
   bottom: 0;
   background-color: #f5f8f9;
@@ -1398,6 +1398,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 15px;
   outline: none !important;
   color: #aab3cd;
+  border: 2px solid transparent;
 }
 .join-pop .bootstrap-select > button.dropdown-toggle:hover {
   background-color: #fff;
@@ -1412,10 +1413,58 @@ input[type=number]::-webkit-inner-spin-button {
   color: #aab3cd;
   border: none;
 }
+.join-pop .dropdown-menu {
+  font-size: 15px;
+  outline: none !important;
+  color: #aab3cd;
+  background-color: #fff !important;
+  border-radius: 0;
+  border-bottom-left-radius: 25px !important;
+  border-bottom-right-radius: 25px !important;
+  box-shadow: none;
+  margin: 0;
+  border: none;
+  margin-top: -1px;
+  box-shadow: 0px 4px 10px 0px rgba(15, 36, 96, 0.08);
+  border: 2px solid #25accd;
+  border-top: none !important;
+}
+.join-pop .dropdown-menu .dropdown-item {
+  font-size: 15px;
+  outline: none !important;
+  color: #626262;
+  background-color: #fff !important;
+  padding-right: 65px;
+  text-align: right;
+  font-family: "itc";
+  font-weight: normal;
+  min-width: 100%;
+}
+.join-pop ul.dropdown-menu {
+  box-shadow: none;
+  border: none !important;
+  min-width: auto;
+  width: auto;
+}
 
-.dropdown.bootstrap-select.show .bootstrap-select > button.dropdown-toggle {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show > .btn-light.dropdown-toggle {
+  border-radius: 25px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border: 2px solid #25accd !important;
+  border-bottom: none !important;
+}
+
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+  box-shadow: 0px 4px 10px 0px rgba(15, 36, 96, 0.08) !important;
+  color: #626262 !important;
+  background-color: #fff !important;
+  border: 2px solid #25accd !important;
+  border-bottom: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
